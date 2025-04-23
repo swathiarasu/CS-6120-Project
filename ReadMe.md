@@ -29,6 +29,12 @@ containerized Streamlit interface.
     └── retriever_live.py         # Retriever for live-uploaded PDFs
 ```
 
+## Requirements
+
+1. Install Python version: 3.12.6
+2. Install Docker
+3. If GPU is used, Drivers need to be installed
+
 ## Steps to run this project
 
 1. To spawn a container
@@ -50,3 +56,4 @@ containerized Streamlit interface.
    > CPU: `docker run -d -p 8501:8501 rag-app`
 
 5. To access the app, open your browser and go to: `http://<external-ip>:8501`
+
