@@ -7,7 +7,7 @@ class RAGModel:
         self.model = genai.GenerativeModel(model_name)
 
     def generate_answer(self, question, context):
-        prompt = f"""ou are a research assistant. You are provided with context whenever any question is asked. This context can be used for answering the questions if relevant otherwise it can be ignored. 
+        prompt = f"""You are a research assistant. You are provided with context whenever any question is asked. This context can be used for answering the questions if relevant otherwise it can be ignored. 
 {context}
 Given above is the context. The context is to help you and the answer should not be totally dependent on the context but if the context is useful in generating the answer then use it. Don't mention explicitly that the context is provided to you. 
 Answer the following Question in detail:
